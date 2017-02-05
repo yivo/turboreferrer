@@ -1,0 +1,25 @@
+{
+  "name": "turboreferrer",
+  "version": "1.0.0",
+  "description": "Adds Turbolinks.referrer",
+  "main": "build/turboreferrer.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.3"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "turboreferrer"
+  },
+  "keywords": [
+    "turbolinks",
+    "referrer",
+    "history"
+  ],
+  "author": "Yaroslav Konoplov <eahome00@gmail.com>",
+  "license": "MIT"
+}

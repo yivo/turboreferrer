@@ -1,0 +1,22 @@
+{
+  "name": "turboreferrer",
+  "description": "Adds Turbolinks.referrer",
+  "main": "build/turboreferrer.js",
+  "authors": [
+    "Yaroslav Konoplov <eahome00@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "turbolinks",
+    "referrer",
+    "history"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
