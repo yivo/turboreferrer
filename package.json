@@ -1,6 +1,6 @@
 {
   "name": "turboreferrer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds Turbolinks.referrer",
   "main": "build/turboreferrer.js",
   "devDependencies": {

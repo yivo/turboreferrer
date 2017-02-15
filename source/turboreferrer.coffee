@@ -1,5 +1,5 @@
 ###!
-# turboreferrer 1.0.0 | https://github.com/yivo/turboreferrer | MIT License  
+# turboreferrer 1.0.1 | https://github.com/yivo/turboreferrer | MIT License  
 ###
   
 Turbolinks.referrer = document.referrer
@@ -15,4 +15,4 @@ if Turbolinks.supported
       returned
       
   window.addEventListener 'popstate', ({state: poppedState}) ->
-    Turbolinks.referrer = poppedState.referrer ? document.referrer
+    Turbolinks.referrer = poppedState?.referrer ? document.referrer

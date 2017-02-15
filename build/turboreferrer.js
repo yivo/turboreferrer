@@ -1,6 +1,6 @@
 
 /*!
- * turboreferrer 1.0.0 | https://github.com/yivo/turboreferrer | MIT License
+ * turboreferrer 1.0.1 | https://github.com/yivo/turboreferrer | MIT License
  */
 
 (function() {
@@ -22,7 +22,7 @@
     window.addEventListener('popstate', function(arg) {
       var poppedState, ref;
       poppedState = arg.state;
-      return Turbolinks.referrer = (ref = poppedState.referrer) != null ? ref : document.referrer;
+      return Turbolinks.referrer = (ref = poppedState != null ? poppedState.referrer : void 0) != null ? ref : document.referrer;
     });
   }
 
