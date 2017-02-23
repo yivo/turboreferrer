@@ -1,12 +1,17 @@
 
 /*!
- * turboreferrer 1.0.1 | https://github.com/yivo/turboreferrer | MIT License
+ * turboreferrer 1.0.2 | https://github.com/yivo/turboreferrer | MIT License
  */
 
 (function() {
   Turbolinks.referrer = document.referrer;
 
   if (Turbolinks.supported) {
+    if (history.state == null) {
+      history.replaceState({
+        url: location.href
+      }, '', location.href);
+    }
     history.state.referrer = document.referrer;
     history.pushState = (function(arg) {
       var pushState;

@@ -1,10 +1,13 @@
 ###!
-# turboreferrer 1.0.1 | https://github.com/yivo/turboreferrer | MIT License  
+# turboreferrer 1.0.2 | https://github.com/yivo/turboreferrer | MIT License  
 ###
-  
+
 Turbolinks.referrer = document.referrer
 
 if Turbolinks.supported
+  unless history.state?
+    history.replaceState url: location.href, '', location.href
+    
   history.state.referrer = document.referrer
   
   history.pushState = do ({pushState} = history) ->
